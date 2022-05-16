@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  app:
+    container_name: followback
+    image: ghcr.io/renchon-iamtakagi-net/followback:latest
+    build:
+      context: .
+    env_file:
+      - .env
+    
