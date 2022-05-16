@@ -33,8 +33,6 @@ def output_log(user, me):
 
 
 async def post_discord_webhook(user, me):
-    url = f'https://twitter.com/@{user.screen_name}'
-
     async with ClientSession(raise_for_status=True) as session:
         webhook = Webhook.from_url(
             DISCORD_WEBHOOK_URL, adapter=AsyncWebhookAdapter(session))
