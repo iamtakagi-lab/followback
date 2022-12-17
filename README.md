@@ -1,6 +1,8 @@
 # followback
 
-`$ docker-compose up -d`
+```sh
+docker-compose up -d
+```
 
 ## Features
 - 現在フォローされているユーザーを自動的にフォローバックする
